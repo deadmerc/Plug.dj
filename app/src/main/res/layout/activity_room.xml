@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dead.plugdj.RoomActivity">
+
+
+    <TextView
+        android:layout_width="355dp"
+        android:id="@+id/play_now"
+        android:textSize="20sp"
+        android:textStyle="normal|italic"
+        android:typeface="sans"
+        android:layout_height="90dp"
+        android:text="Track Name"
+        android:textAlignment="textStart" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="430dp">
+
+        <Button
+            android:text="Woot!"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="430dp"
+            android:id="@+id/button_woot"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:text="Grab"
+            android:layout_height="wrap_content"
+            android:layout_x="140dp"
+            android:layout_y="430dp"
+            android:id="@+id/button4"
+            android:layout_weight="0.33"/>
+
+        <Button
+            android:text="Meh"
+            android:layout_height="wrap_content"
+            android:layout_x="268dp"
+            android:layout_y="430dp"
+            android:id="@+id/button5"
+            android:layout_weight="0.33"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_y="389dp"
+        android:layout_x="7dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="400dp"
+            android:id="@+id/woot_count"
+            android:layout_weight="0.33"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="0" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_x="158dp"
+            android:layout_y="400dp"
+            android:id="@+id/grab_count"
+            android:layout_weight="0.33"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="0" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_x="292dp"
+            android:layout_y="400dp"
+            android:id="@+id/meh_count"
+            android:layout_weight="0.33"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="0" />
+
+    </TableRow>
+
+</AbsoluteLayout>
