@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_room"
     android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         android:textSize="20sp"
         android:textStyle="normal|italic"
         android:typeface="sans"
-        android:layout_height="90dp"
+        android:layout_height="67dp"
         android:text="Track Name"
         android:textAlignment="textStart" />
 
@@ -40,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_x="140dp"
             android:layout_y="430dp"
-            android:id="@+id/button4"
+            android:id="@+id/button_grab"
             android:layout_weight="0.33"/>
 
         <Button
@@ -48,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_x="268dp"
             android:layout_y="430dp"
-            android:id="@+id/button5"
+            android:id="@+id/button_meh"
             android:layout_weight="0.33"/>
 
     </TableRow>
@@ -90,5 +91,22 @@
             android:text="0" />
 
     </TableRow>
+
+    <TextView
+        android:text="Visualisation will added in new versions."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="217dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:elevation="1dp" />
+
+    <!--<WebView
+        android:layout_width="314dp"
+        android:layout_height="308dp"
+        android:layout_x="10dp"
+        android:layout_y="80dp"
+        android:id="@+id/visual" />-->
 
 </AbsoluteLayout>

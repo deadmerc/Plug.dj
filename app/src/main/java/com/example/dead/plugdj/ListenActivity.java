@@ -1,12 +1,13 @@
 package com.example.dead.plugdj;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ListenActivity extends AppCompatActivity implements View.OnClickListener {
+public class ListenActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,6 @@ public class ListenActivity extends AppCompatActivity implements View.OnClickLis
                 intent.putExtra("room_url", "https://plug.dj/tastycat");
                 break;
         }
-
         startActivity(intent);
     }
 }
